@@ -2,6 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import perceptron as per
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import perceptron as per
+import visualize
 
 df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None)
 
@@ -22,4 +27,11 @@ ppn.fit(X, y)
 plt.plot(range(1, len(ppn.errors_) + 1), ppn.errors_, marker='o')
 plt.xlabel('Epochs')
 plt.ylabel('Number of misclassifications')
+plt.show()
+
+visualize.plot_decision_regions(plt, X, y, classifier=ppn)
+
+plt.xlabel('sepal length [cm]')
+plt.ylabel('petal length [cm]')
+plt.legend(loc='upper left')
 plt.show()
