@@ -1,5 +1,27 @@
 import numpy as np
 
+# Just a description of some of the parameters
+#   -- Paramaters --
+#
+#   X = the (training) data itself (no headers),
+#       where each row maps to a single item,
+#       and each column is an attribute, like
+#       petal length, sepal length, height,
+#       etc.
+#
+#   y = classification data, i.e. each row is the
+#       "classification" of the item in that row.
+#       For two types of items, like Setosa and
+#       Versicolor, you only have two species so
+#       y can either be 1 (versicolor) or -1
+#       (setosa)
+#
+#   ... our eventual goal is to map a function that
+#   solves/approximates the equation
+#
+#           A * X = y
+#
+
 class Perceptron(object):
     'A python perceptron!'
 
