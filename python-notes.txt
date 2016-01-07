@@ -1,0 +1,6 @@
+- objects comparisons can be overridden by overriding 'self.__gt__', 'self.__eq__' (gt = greater-than, eq= equal-to) etc.
+- pandas uses "data-frames" to represent data - kind of like a csv
+- numpy uses ndarray datatype
+- df.iloc allows you to select rows and columns (returns another dataframe)
+- df.values converts to ndarra
+- matplotlib.pyplot.show() also clears data
